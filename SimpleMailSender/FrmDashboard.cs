@@ -41,7 +41,7 @@ namespace SimpleMailSender
 
         private void FrmDashboard_FormClosing(object sender, FormClosingEventArgs e)
         {
-            if (MessageBox.Show(@"保存信息", @"确认", MessageBoxButtons.OKCancel) == DialogResult.OK)
+            if (MessageBox.Show(@"Save / 保存信息?", @"Yes / 确认", MessageBoxButtons.OKCancel) == DialogResult.OK)
             {
                 Save();
             }
