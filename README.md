@@ -5,8 +5,8 @@ a mail sender for test, debug.
 If you wanna to know, why my mail settings are all right but the email allways send failed.<br>
 Once have this, no more confuse, no more anxious.
 
-
-可以保存当前配置，或者另加载配置 <br>Host settings can save, and load.
+![](https://raw.githubusercontent.com/rickxie/SimpleMailSender/master/UI.png)<br>
+可以保存当前配置，或者另加载配置 <br>settings can be saved, and loaded.
 
 ## 主要代码 Key Code:<br>     
 ```C#
