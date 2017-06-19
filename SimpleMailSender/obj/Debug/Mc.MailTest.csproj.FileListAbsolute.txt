@@ -1,0 +1,25 @@
+c:\users\mc\documents\visual studio 2015\Projects\Mc.MailTest\Mc.MailTest\bin\Debug\Mc.MailTest.exe.config
+c:\users\mc\documents\visual studio 2015\Projects\Mc.MailTest\Mc.MailTest\bin\Debug\Mc.MailTest.exe
+c:\users\mc\documents\visual studio 2015\Projects\Mc.MailTest\Mc.MailTest\bin\Debug\Mc.MailTest.pdb
+c:\users\mc\documents\visual studio 2015\Projects\Mc.MailTest\Mc.MailTest\obj\Debug\Mc.MailTest.csprojResolveAssemblyReference.cache
+c:\users\mc\documents\visual studio 2015\Projects\Mc.MailTest\Mc.MailTest\obj\Debug\Mc.MailTest.FrmDashboard.resources
+c:\users\mc\documents\visual studio 2015\Projects\Mc.MailTest\Mc.MailTest\obj\Debug\Mc.MailTest.Properties.Resources.resources
+c:\users\mc\documents\visual studio 2015\Projects\Mc.MailTest\Mc.MailTest\obj\Debug\Mc.MailTest.csproj.GenerateResource.Cache
+c:\users\mc\documents\visual studio 2015\Projects\Mc.MailTest\Mc.MailTest\obj\Debug\Mc.MailTest.exe
+c:\users\mc\documents\visual studio 2015\Projects\Mc.MailTest\Mc.MailTest\obj\Debug\Mc.MailTest.pdb
+C:\Users\MC\Documents\Visual Studio 2015\Projects\Mc.MailTest\Mc.MailTest\bin\Debug\System.Net.Http.dll
+C:\Users\MC\Documents\Visual Studio 2015\Projects\Mc.MailTest\Mc.MailTest\bin\Debug\System.Net.Http.xml
+C:\Users\MC\Documents\Visual Studio 2015\Projects\Mc.MailTest\Mc.MailTest\bin\Debug\zh-Hans\System.Net.Http.resources.dll
+C:\Users\Shalu\Desktop\Mc.MailTest-master\Mc.MailTest\bin\Debug\Mc.MailTest.exe.config
+C:\Users\Shalu\Desktop\Mc.MailTest-master\Mc.MailTest\obj\Debug\Mc.MailTest.exe
+C:\Users\Shalu\Desktop\Mc.MailTest-master\Mc.MailTest\obj\Debug\Mc.MailTest.pdb
+C:\Users\Shalu\Desktop\Mc.MailTest-master\Mc.MailTest\bin\Debug\Mc.MailTest.exe
+C:\Users\Shalu\Desktop\Mc.MailTest-master\Mc.MailTest\bin\Debug\Mc.MailTest.pdb
+C:\Users\Shalu\Desktop\Mc.MailTest-master\Mc.MailTest\obj\Debug\Mc.MailTest.csprojResolveAssemblyReference.cache
+C:\Users\Shalu\Desktop\Mc.MailTest-master\Mc.MailTest\obj\Debug\Mc.MailTest.FrmDashboard.resources
+C:\Users\Shalu\Desktop\Mc.MailTest-master\Mc.MailTest\obj\Debug\Mc.MailTest.Properties.Resources.resources
+C:\Users\Shalu\Desktop\Mc.MailTest-master\Mc.MailTest\obj\Debug\Mc.MailTest.csproj.GenerateResource.Cache
+D:\Git\Mc.MailTest-master\Mc.MailTest\bin\Debug\Mc.MailTest.exe.config
+D:\Git\Mc.MailTest-master\Mc.MailTest\obj\Debug\Mc.MailTest.exe
+D:\Git\Mc.MailTest-master\Mc.MailTest\obj\Debug\Mc.MailTest.pdb
+D:\Git\Mc.MailTest-master\Mc.MailTest\bin\Debug\SimpleMailSender.exe.config
