@@ -10,59 +10,56 @@ Once have this, no more confuse, no more anxious.
 
 ## 主要代码 Key Code:<br>     
 ```C#
-
-     SmtpClient client = new SmtpClient(HostAddress, Port)
-     {
-         EnableSsl = EnableSsl,
-         Credentials = new System.Net.NetworkCredential(ServerUserName, ServerPassword)
-     };
-
-     var message = new MailMessage { From = new MailAddress(ServerEmail, SenderDisplayName) };
-     foreach (var addr in toUserAddresss)
-     {
-         message.To.Add(new MailAddress(addr));
-     }
-     // Attachment.Foreach(r => message.Attachments.Add(r));
-     if (attachments != null)
-     {
-         foreach (var s in attachments)
-         {
-             Attachment data = new Attachment(s, MediaTypeNames.Application.Octet);
-             data.Name = s.Substring(s.LastIndexOf("/", StringComparison.Ordinal) + 1);
-             data.NameEncoding = Encoding.UTF8;
-             // Add time stamp information for the file.
-             ContentDisposition disposition = data.ContentDisposition;
-             disposition.CreationDate = File.GetCreationTime(s);
-             disposition.ModificationDate = File.GetLastWriteTime(s);
-             disposition.ReadDate = File.GetLastAccessTime(s);
-             // Add the file attachment to this e-mail message.
-             message.Attachments.Add(data);
-         }
-     }
-
-//            Set CC list
-     if (cc != null)
-     {
-         foreach (var s in cc)
-         {
-             message.CC.Add(s);
-         }
-     }
-     ////Set Bcc List
-     if (bcc != null)
-     {
-         foreach (var s in bcc)
-         {
-             message.Bcc.Add(s);
-         }
-     }
-     ServicePointManager.ServerCertificateValidationCallback = delegate (Object obj, X509Certificate certificate, X509Chain chain, SslPolicyErrors errors) { return true; };
-     message.Subject = subject;
-     message.Body = mailBody;
-     message.BodyEncoding = BodyEncoding;
-     message.IsBodyHtml = IsHtmlBody;
-     client.Timeout = Timeout;
-     client.Send(message);
+SmtpClient client = new SmtpClient(HostAddress, Port)
+{
+    EnableSsl = EnableSsl,
+    Credentials = new System.Net.NetworkCredential(ServerUserName, ServerPassword)
+};
+var message = new MailMessage { From = new MailAddress(ServerEmail, SenderDisplayName) };
+foreach (var addr in toUserAddresss)
+{
+    message.To.Add(new MailAddress(addr));
+}
+// Attachment.Foreach(r => message.Attachments.Add(r));
+if (attachments != null)
+{
+    foreach (var s in attachments)
+    {
+        Attachment data = new Attachment(s, MediaTypeNames.Application.Octet);
+        data.Name = s.Substring(s.LastIndexOf("/", StringComparison.Ordinal) + 1);
+        data.NameEncoding = Encoding.UTF8;
+        // Add time stamp information for the file.
+        ContentDisposition disposition = data.ContentDisposition;
+        disposition.CreationDate = File.GetCreationTime(s);
+        disposition.ModificationDate = File.GetLastWriteTime(s);
+        disposition.ReadDate = File.GetLastAccessTime(s);
+        // Add the file attachment to this e-mail message.
+        message.Attachments.Add(data);
+    }
+}
+//Set CC list
+if (cc != null)
+{
+    foreach (var s in cc)
+    {
+        message.CC.Add(s);
+    }
+}
+//Set Bcc List
+if (bcc != null)
+{
+    foreach (var s in bcc)
+    {
+        message.Bcc.Add(s);
+    }
+}
+ServicePointManager.ServerCertificateValidationCallback = delegate (Object obj, X509Certificate certificate, X509Chain chain, SslPolicyErrors errors) { return true; };
+message.Subject = subject;
+message.Body = mailBody;
+message.BodyEncoding = BodyEncoding;
+message.IsBodyHtml = IsHtmlBody;
+client.Timeout = Timeout;
+client.Send(message);
 ```
    
    
