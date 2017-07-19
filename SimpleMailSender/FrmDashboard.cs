@@ -30,7 +30,8 @@ namespace SimpleMailSender
         public void Send()
         {
             ReadToConfig();
-            config.SetConfigAndSend();
+            config.ShowDialog = true;
+            config.Send();
         }
 
 
@@ -106,6 +107,12 @@ namespace SimpleMailSender
                 SetToUi();
             }
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            FrmBatchSend sendr = new FrmBatchSend(config);
+            sendr.ShowDialog();
         }
     }
 }

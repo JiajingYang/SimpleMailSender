@@ -49,11 +49,12 @@
             this.tbServer = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.加载配置 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnSend
             // 
-            this.btnSend.Location = new System.Drawing.Point(403, 16);
+            this.btnSend.Location = new System.Drawing.Point(410, 9);
             this.btnSend.Name = "btnSend";
             this.btnSend.Size = new System.Drawing.Size(57, 35);
             this.btnSend.TabIndex = 0;
@@ -208,7 +209,7 @@
             this.tbServer.Name = "tbServer";
             this.tbServer.Size = new System.Drawing.Size(178, 21);
             this.tbServer.TabIndex = 1;
-            this.tbServer.Text = "mail.qq.com";
+            this.tbServer.Text = "mail.rainbowbenefits.com";
             // 
             // label9
             // 
@@ -220,7 +221,7 @@
             // 
             // 加载配置
             // 
-            this.加载配置.Location = new System.Drawing.Point(375, 57);
+            this.加载配置.Location = new System.Drawing.Point(382, 50);
             this.加载配置.Name = "加载配置";
             this.加载配置.Size = new System.Drawing.Size(87, 51);
             this.加载配置.TabIndex = 13;
@@ -228,11 +229,22 @@
             this.加载配置.UseVisualStyleBackColor = true;
             this.加载配置.Click += new System.EventHandler(this.加载配置_Click);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(402, 107);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(65, 58);
+            this.button1.TabIndex = 14;
+            this.button1.Text = "群发 Batch Send";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // FrmDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(488, 384);
+            this.ClientSize = new System.Drawing.Size(479, 384);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.加载配置);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.tbTo);
@@ -285,6 +297,7 @@
         private System.Windows.Forms.TextBox tbServer;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Button 加载配置;
+        private System.Windows.Forms.Button button1;
     }
 }
 

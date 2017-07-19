@@ -12,6 +12,5 @@
   <UseDefaultCredentials>false</UseDefaultCredentials>
   <Subject>Test</Subject>
   <Content>Test</Content>
-  <To>xiemengcheng@outlook.com</To>
-  <ShowDialog>true</ShowDialog>
+  <To>119139463@qq.com</To>
 </EmailServerConfig>

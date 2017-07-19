@@ -19,7 +19,8 @@ namespace SimpleMailSender
         public string Subject { get; set; }  
         public string Content { get; set; } 
         public string To { get; set; }
-
+        public bool ShowDialog { get; set; } = true;
+        public string Error { get; set; }
         public EmailServerConfig()
         {
             
@@ -67,18 +68,28 @@ namespace SimpleMailSender
         /// <summary>
         /// 设置并发送
         /// </summary>
-        public void SetConfigAndSend()
+        public bool Send()
         {
             EmailSender helper = new EmailSender(HostAddress, ServerUserName, ServerEmail, ServerPassword, Port, EnableSsl, SenderDisplayName, UseDefaultCredentials, Timeout);
             try
             {
                 helper.Send(Subject, Content, To.Split(','));
+                if(ShowDialog)
                 MessageBox.Show(@"发送成功", @"提示");
+                return true;
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message + ex.InnerException?.Message + ex.StackTrace);
+                if(ShowDialog)
+                    MessageBox.Show(ex.Message + ex.InnerException?.Message + ex.StackTrace);
+                Error = ex.ToString();
+                return false;
             }
+        }
+
+        public EmailServerConfig DeepCopy()
+        {
+            return MemberwiseClone() as EmailServerConfig;
         }
      }
 
