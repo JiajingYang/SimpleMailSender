@@ -1,6 +1,7 @@
 ﻿using System;
 using System.IO;
 using System.Windows.Forms;
+using SimpleMailSender.EmailExtension;
 
 namespace SimpleMailSender
 {
@@ -95,6 +96,7 @@ namespace SimpleMailSender
         private void 加载配置_Click(object sender, EventArgs e)
         {
             OpenFileDialog open = new OpenFileDialog();
+            open.InitialDirectory = AppDomain.CurrentDomain.BaseDirectory;
             var result = open.ShowDialog();
             if (string.IsNullOrEmpty(open.FileName))
             {

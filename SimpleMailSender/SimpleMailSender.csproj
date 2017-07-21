@@ -62,8 +62,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="EmailHelper.cs" />
-    <Compile Include="EmailServerConfig.cs" />
     <Compile Include="ExcelManager.cs" />
     <Compile Include="FrmBatchSend.cs">
       <SubType>Form</SubType>
@@ -79,7 +77,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="XMLSerializor.cs" />
     <EmbeddedResource Include="FrmBatchSend.resx">
       <DependentUpon>FrmBatchSend.cs</DependentUpon>
     </EmbeddedResource>
@@ -108,6 +105,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SimpleMailSender.EmailExtension\SimpleMailSender.EmailExtension.csproj">
+      <Project>{207f203d-a863-4973-bfdb-202f5e71035f}</Project>
+      <Name>SimpleMailSender.EmailExtension</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
